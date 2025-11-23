@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89324394476",
+    "project_id": "safety-demo-db6a0",
+    "storage_bucket": "safety-demo-db6a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89324394476:android:93974da7ccda0fe612d2c9",
+        "android_client_info": {
+          "package_name": "com.example.safety_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89324394476-s62f556dooo1807mi8o22di1t6spn13u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgD786UMFCm8XGHQQ8PoVjFpH05u7aEBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89324394476-s62f556dooo1807mi8o22di1t6spn13u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
