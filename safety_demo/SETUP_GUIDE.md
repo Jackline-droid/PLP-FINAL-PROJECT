@@ -15,6 +15,16 @@ flutter pub get
 4. Download `google-services.json`
 5. Place it in `android/app/` directory
 6. Enable **Email/Password** authentication in Firebase Console → Authentication
+7. **Generate firebase_options.dart**:
+   ```bash
+   # Recommended: Use FlutterFire CLI
+   dart pub global activate flutterfire_cli
+   flutterfire configure
+   
+   # Or copy template and fill manually
+   cp lib/firebase_options.dart.template lib/firebase_options.dart
+   # Edit firebase_options.dart with your Firebase credentials
+   ```
 
 ### 3. Run the App
 ```bash

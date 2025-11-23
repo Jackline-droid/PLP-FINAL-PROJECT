@@ -69,7 +69,17 @@ This app demonstrates:
    - Add Android app to Firebase project
    - Download `google-services.json` and place it in `android/app/`
    - Enable Email/Password authentication in Firebase Console
-   - Run `flutterfire configure` (if using FlutterFire CLI)
+   - **Generate firebase_options.dart**:
+     ```bash
+     # Option 1: Use FlutterFire CLI (recommended)
+     dart pub global activate flutterfire_cli
+     flutterfire configure
+     
+     # Option 2: Copy template and fill in values
+     cp lib/firebase_options.dart.template lib/firebase_options.dart
+     # Then edit firebase_options.dart with your Firebase credentials
+     ```
+   - **Note**: `firebase_options.dart` is in `.gitignore` to protect API keys. See `SECURITY.md` for details.
 
 4. **Android Configuration**
    - Location permissions are already configured in `AndroidManifest.xml`
@@ -235,6 +245,12 @@ safety_demo/
 - `flutter_lints` - Linting rules
 
 ## 🔐 Security Notes
+
+### Firebase API Keys
+- **Client-side keys are safe to expose** (they're public by design)
+- `firebase_options.dart` is in `.gitignore` to prevent committing keys
+- Use `firebase_options.dart.template` as a starting point
+- See `SECURITY.md` for detailed security information
 
 ### Current Implementation (Demo)
 - Static encryption key (for demonstration)
